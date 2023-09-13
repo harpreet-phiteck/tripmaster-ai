@@ -6,107 +6,6 @@
     width: 1360px;
     margin: 0 auto;
 }
-.main_wrapper .container .intro_wrapper {
-    display: flex;
-    width: 918px;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 34px 0px 70px;
-    margin: 0 auto;
-}
-.main_wrapper .container .intro_wrapper h1 {
-    color: #1B3231;
-    font-size: 56px;
-    line-height: 78px;
-    font-family: 'Chillax-Semibold';
-    margin-bottom: 20px;
-}
-.main_wrapper .container .intro_wrapper p {
-    width: 780px;
-    color: #215552;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-}
-.main_wrapper .container .planning_wrapper {
-    display: flex;
-    width: 681px;
-    align-items: center;
-    margin: 0 auto;
-    background: #fff;
-    height: 73px;
-    border: 1px solid #dddddd;
-    border-radius: 50px;
-    margin-bottom: 68px;
-}
-.main_wrapper .container .planning_wrapper .plan_here {
-    width: 355px;
-    padding-left: 41px;
-}
-.main_wrapper .container .planning_wrapper .plan_here .nosubmit {
-    width: 100%;
-    background: transparent;
-    border: none;
-    color: #1B3231;
-    font-size: 18px;
-    line-height: 25px;
-    font-family: 'Chillax-Medium';
-    position: relative;
-    display: flex;
-    outline: none;
-    gap: 14px;
-}
-.main_wrapper .container .planning_wrapper .plan_here .nosubmit svg {
-    width: 24px;
-    height: 24px;
-    stroke: #1B3231;
-}
-.main_wrapper .container .planning_wrapper .choose_date {
-    width: 148px;
-    height: 44px;
-    border-left: 1px solid #dddddd;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    position: relative;
-}
-.main_wrapper .container .planning_wrapper .choose_date button {
-    display: flex;
-    width: 100%;
-    height: 44px;
-    align-items: center;
-    gap: 16px;
-    background: transparent;
-    border: none;
-    font-size: 18px;
-    line-height: 25px;
-    color: #798685;
-    font-family: 'Chillax-Medium';
-}
-.main_wrapper .container .planning_wrapper .choose_date button svg {
-    width: 24px;
-    height: 24px;
-    font-size: 20px;
-}
-.main_wrapper .container .planning_wrapper .lets_go {
-    width: 112px;
-    height: 63px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main_wrapper .container .planning_wrapper .lets_go button {
-    background: #00AEA4;
-    border: 1px solid #00AEA4;
-    border-radius: 50px;
-    width: 112px;
-    height: 63px;
-    color: #fff;
-    font-size: 18px;
-    line-height: 25px;
-    font-family: 'Chillax-Medium';
-}
 .main_wrapper .container .detail_wrapper {
     display: flex;
     width: 100%;
@@ -138,32 +37,19 @@
     line-height: 47px;
     font-weight: 500;
 }
-.mobile_intro_wrapper{
-    display: none;
-}
+
 @media screen and (max-width: 1400px) {
     .main_wrapper .container {
         width: 96vw;
     }
- 
-    .main_wrapper .container .intro_wrapper {
-        width: 75vw;
-    }
-    .main_wrapper .container .detail_wrapper .detail_sec {
-        width: 31.8%;
-    }
 }
-@media screen and (max-width: 1280px) {
- 
-    .main_wrapper .container .intro_wrapper {
-        width: 85vw;
-    }
+@media screen and (max-width: 1280px) {  
     .main_wrapper .container .detail_wrapper .detail_sec {
         width: 31.5%;
     }
 }
 @media screen and (max-width: 1080px) {
-  
+ 
     .main_wrapper .container .intro_wrapper h1 {
         font-size: 40px;
     }
@@ -178,8 +64,6 @@
     .main_wrapper .container .detail_wrapper .detail_sec {
         width: 47%;
     }
-   
-
 }
 @media screen and (max-width: 881px) {
  

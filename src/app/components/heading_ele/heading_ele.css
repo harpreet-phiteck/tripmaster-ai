@@ -1,0 +1,107 @@
+.main_wrapper .container .intro_wrapper {
+    display: flex;
+    width: 918px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 0px 70px;
+    margin: 0 auto;
+}
+.main_wrapper .container .intro_wrapper h1 {
+    color: #1B3231;
+    font-size: 56px;
+    line-height: 78px;
+    font-family: 'Chillax-Semibold';
+    margin-bottom: 20px;
+}
+.main_wrapper .container .intro_wrapper p {
+    width: 780px;
+    color: #215552;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+.mobile_intro_wrapper{
+    display: none;
+}
+
+@media screen and (max-width: 1400px) { 
+    .main_wrapper .container .intro_wrapper {
+        width: 75vw;
+    }
+    .main_wrapper .container .detail_wrapper .detail_sec {
+        width: 31.8%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .main_wrapper .container .intro_wrapper {
+        width: 85vw;
+    }
+}
+@media screen and (max-width: 1080px) {  
+   .main_wrapper .container .intro_wrapper h1 {
+        font-size: 40px;
+    }
+    .main_wrapper .container .intro_wrapper p {
+        width: 78vw;
+        font-size: 14px;
+        line-height: 17px;
+    }  
+}
+@media screen and (max-width: 881px) {
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 767px) {  
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 35px;
+    }  
+}
+@media screen and (max-width: 680px) {    
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 35px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .main_wrapper .container .intro_wrapper p {
+        display: none;
+    }
+    .mobile_intro_wrapper {
+        display: flex !important;
+        width: 100%;
+    }
+    .mobile_intro_wrapper p {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .mobile_header header .logo_wrapper {
+        width: 45%;
+    }
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .main_wrapper .container .main_result_sec .result_header .search_div {     
+        width: 90%;
+    }   
+}
+@media screen and (max-width: 374px) {    
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 29px;
+        line-height: 39px;
+    }  
+}
+@media screen and (max-width: 320px) {
+    .main_wrapper .container .intro_wrapper h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
