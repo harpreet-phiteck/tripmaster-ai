@@ -1,19 +1,19 @@
+'use client'
+import { usePathname } from 'next/navigation'
 import './heading_ele.css';
-export default function Heading_ele() {
+export default function Heading_ele(props) {
+  const path = usePathname()
   return (
     <div className="intro_wrapper">
-      <h1>Plan Your Trip With Tripmaster AI</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt
-      </p>
-      <p>ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <h1>{props.data.heading}</h1>
+      { 
+      path !='/pages/search_anywhere'?[
+        <p>{props.data.description1}</p>,
+        <p>{props.data.description2}</p>
+      ]:null
+      }
       <section className="mobile_intro_wrapper">
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
+        <p>{props.data.m_description}</p>
       </section>
     </div>
   );

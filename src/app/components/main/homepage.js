@@ -1,7 +1,11 @@
+'use client'
 import Heading_ele from "../heading_ele/heading_ele";
 import Heading_input from "../heading_input/heading_input";
 import "./homepage.css";
+import { usePathname } from 'next/navigation'
 export default function Homepage() {
+  const path = usePathname()
+  console.log(path)
   let places = [
     {
       bg_img: "/first.png",
@@ -22,15 +26,24 @@ export default function Homepage() {
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
   ];
+
   return (
     <main className="main_wrapper">
       <div className="container">
-        <Heading_ele />
-       <Heading_input/>
+        <Heading_ele data={
+          {
+             heading: "Plan Your Trip With Tripmaster AI",
+             description1:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt',
+             description2:'ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+             m_description:'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua.'
+            }
+          } />
+        <Heading_input />
         <div className="detail_wrapper">
-          {places.map((data) => {
+          {places.map((data,index) => {
             return (
               <div
+                key={'00'+index}
                 className="detail_sec"
                 style={{ backgroundImage: `url(${data.bg_img})` }}
               >

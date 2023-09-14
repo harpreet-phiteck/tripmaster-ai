@@ -180,9 +180,27 @@ header .signup_wrapper a {
     text-decoration: none;
     font-family: 'Chillax-Medium';
 }
+.theme_color{
+    color: #00AEA4 !important;
+}
+.theme_bg_color{
+    background: #00AEA4 !important;
+    border: 1px solid #00AEA4 !important;
+}
+.white{
+    color: #fff !important;
+}
+.bg_white{
+    background-color: #fff;
+}
+.bg_color{
+    border: 1px solid #d8f3f3 !important;
+    background: #d8f3f3 !important;
+}
 @media screen and (max-width: 1400px) {
     .main_wrapper .container {
         width: 96vw;
+        margin: auto;
     }
     header .menu_wrapper {
         width: 15%;

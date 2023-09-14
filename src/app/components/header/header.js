@@ -1,22 +1,23 @@
 'use client'
+import { usePathname } from 'next/navigation'
 import Image from "next/image";
 import "./header.css";
 export default function Header() {      
+  const path = usePathname()
     function mobileMenu() {
         const navMenu = document.querySelector(".nav-menu");
         const hamburger = document.querySelector(".hamburger");
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
-    }    
-   
+    }       
   return (
     <header>
       <div className="menu_wrapper">
         <button>
-          <div className="hamburger" onClick={mobileMenu}>
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+          <div className={path !='/pages/search_anywhere'?"hamburger":'hamburger theme_bg_color'} onClick={mobileMenu}>
+            <span className={path !='/pages/search_anywhere'? "bar":"bar bg_white" }></span>
+            <span className={path !='/pages/search_anywhere'? "bar":"bar bg_white" }></span>
+            <span className={path !='/pages/search_anywhere'? "bar":"bar bg_white" }></span>
           </div>
           <nav className="navbar">
             <ul className="nav-menu">
@@ -73,8 +74,8 @@ export default function Header() {
           
         />
       </div>
-      <div className="signup_wrapper">
-        <a href="#">Sign in</a>
+      <div className={path !='/pages/search_anywhere'? "signup_wrapper":"signup_wrapper bg_color"}>
+        <a href="#">{path !='/pages/search_anywhere'? 'Sign in':'Plan my trip'}</a>
       </div>
     </header>
   );

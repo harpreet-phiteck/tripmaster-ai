@@ -41,3 +41,17 @@ body{
 *{
   margin: 0px; 
 }
+.main_wrapper {
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+.main_wrapper .container {
+  width: 1360px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1400px) { 
+.main_wrapper .container {
+  width: 96vw;
+  margin: auto;
+}
+}

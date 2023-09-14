@@ -1,7 +1,10 @@
+'use client'
 import './heading_input.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from 'next/navigation'
 export default function Heading_input(){
+  const path = usePathname()
     return(
         <div className="planning_wrapper">
         <div className="plan_here">
@@ -34,7 +37,7 @@ export default function Heading_input(){
           </button>
         </div>
         <div className="lets_go">
-          <button>Find</button>
+          <button>Plan my trip</button>
         </div>
       </div>
     )

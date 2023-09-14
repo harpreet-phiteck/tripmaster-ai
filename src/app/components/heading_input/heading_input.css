@@ -1,6 +1,6 @@
 .main_wrapper .container .planning_wrapper {
     display: flex;
-    width: 681px;
+    width:720px;
     align-items: center;
     margin: 0 auto;
     background: #fff;
@@ -59,7 +59,7 @@
     font-size: 20px;
 }
 .main_wrapper .container .planning_wrapper .lets_go {
-    width: 112px;
+    width: 162px;
     height: 63px;
     display: flex;
     align-items: center;
@@ -69,7 +69,7 @@
     background: #00AEA4;
     border: 1px solid #00AEA4;
     border-radius: 50px;
-    width: 112px;
+    width: 150px;
     height: 63px;
     color: #fff;
     font-size: 18px;
@@ -79,12 +79,18 @@
 @media screen and (max-width: 767px) {  
     .main_wrapper .container .planning_wrapper {
         width: 646px;
+        height: 62px;
     }
     .main_wrapper .container .planning_wrapper .lets_go {
         padding-right: 5px;
+        height: 58px;
     }  
+    .main_wrapper .container .planning_wrapper .lets_go button{
+        height: 54px;
+        font-size: 14px;
+    }
    .main_wrapper .container .planning_wrapper .choose_date button {       
-        font-size: 16px;
+        font-size: 14px;
     }     
 }
 @media screen and (max-width: 680px) {
