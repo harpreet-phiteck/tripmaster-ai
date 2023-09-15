@@ -49,9 +49,8 @@ body{
   width: 1360px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1400px) { 
-.main_wrapper .container {
-  width: 96vw;
-  margin: auto;
-}
+@media screen and (max-width: 1400px) {
+  .main_wrapper .container {
+      width: 96vw;
+  }
 }

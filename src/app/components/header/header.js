@@ -14,10 +14,10 @@ export default function Header() {
     <header>
       <div className="menu_wrapper">
         <button>
-          <div className={path !='/pages/search_anywhere'?"hamburger":'hamburger theme_bg_color'} onClick={mobileMenu}>
-            <span className={path !='/pages/search_anywhere'? "bar":"bar bg_white" }></span>
-            <span className={path !='/pages/search_anywhere'? "bar":"bar bg_white" }></span>
-            <span className={path !='/pages/search_anywhere'? "bar":"bar bg_white" }></span>
+          <div className={path !='/pages/recommend'?"hamburger":'hamburger theme_bg_color'} onClick={mobileMenu}>
+            <span className={path !='/pages/recommend'? "bar":"bar bg_white" }></span>
+            <span className={path !='/pages/recommend'? "bar":"bar bg_white" }></span>
+            <span className={path !='/pages/recommend'? "bar":"bar bg_white" }></span>
           </div>
           <nav className="navbar">
             <ul className="nav-menu">
@@ -74,8 +74,8 @@ export default function Header() {
           
         />
       </div>
-      <div className={path !='/pages/search_anywhere'? "signup_wrapper":"signup_wrapper bg_color"}>
-        <a href="#">{path !='/pages/search_anywhere'? 'Sign in':'Plan my trip'}</a>
+      <div className={path !='/pages/recommend'? "signup_wrapper":"signup_wrapper bg_color"}>
+        <a href="#">{path !='/pages/recommend'? 'Sign in':'Plan my trip'}</a>
       </div>
     </header>
   );

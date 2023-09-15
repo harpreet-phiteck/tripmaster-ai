@@ -1,0 +1,10 @@
+.main_wrapper .container {
+    width: 90%;
+    margin: auto;
+}
+.main_wrapper .container .recommend_content_wrapper > h2 {
+    font-size: clamp(20px, 2vw, 46px);
+    line-height: 60px;
+    color: #1B3231;
+    font-family: 'Chillax-Semibold';
+}

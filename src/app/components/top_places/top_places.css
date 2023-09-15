@@ -1,0 +1,148 @@
+ .main_wrapper .container .top_places_wrapper {
+    display: flex;
+    width: 94%;
+    flex-wrap: wrap;
+    background: url('../../../../public/recommend-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-bottom: 70px;
+    padding: 50px;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_detail_sec {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 90px;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_detail_sec .new-div {
+    padding-left: 90px;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_detail_sec .top_place_img {
+    width: 37vw;
+    height: 25vw;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_detail_sec .top_place_img img {
+    object-fit: contain;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt {
+    width: 32vw;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+    color: #1B3231;
+    font-size: 46px;
+    line-height: 60px;
+    font-family: 'Chillax-Medium';
+    margin-bottom: 30px;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt p {
+    color: #798685;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 26px;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt p strong {
+    color: #4C5150;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt .top_place_btn {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt .top_place_btn button {
+    padding: 14px 30px 14px 30px;
+    background: #00AEA4;
+    border: 1px solid #00AEA4;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+}
+ .main_wrapper .container .top_places_wrapper .top_place_txt .top_place_btn button {
+    padding: 14px 30px 14px 30px;
+    background: #00AEA4;
+    border: 1px solid #00AEA4;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+}
+@media screen and (max-width: 1850px) {
+     .main_wrapper .container .top_places_wrapper .top_place_detail_sec .top_place_img img {
+        width: 100%;
+    }
+    .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 41px;
+        line-height: 51px;
+    }
+}
+@media screen and (max-width: 1700px) {   
+     .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width: 1560px) {
+    .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .main_wrapper .container .top_places_wrapper .top_place_txt {
+        width: 37vw;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 990px) { 
+    .main_wrapper .container .top_places_wrapper {
+        display: none;
+    }
+    .tab_places_wrapper {
+        display: flex !important;
+        max-width: 100%;
+    }
+    .tab_places_wrapper .top_places_wrapper {
+        display: flex !important;
+        width: 87%;
+    }
+    .tab_places_wrapper .top_places_wrapper .top_place_detail_sec .top_place_txt {
+        width: 100% !important;
+    }
+    .tab_places_wrapper .top_places_wrapper .top_place_detail_sec .top_place_img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+     .main_wrapper .container .top_places_wrapper .top_place_txt .top_place_btn {
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+     .main_wrapper .container .top_places_wrapper .top_place_detail_sec .new-div {
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 880px) {
+     .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+     .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width :680px) {
+     .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

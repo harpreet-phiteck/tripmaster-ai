@@ -7,13 +7,13 @@ export default function Heading_ele(props) {
     <div className="intro_wrapper">
       <h1>{props.data.heading}</h1>
       { 
-      path !='/pages/search_anywhere'?[
-        <p>{props.data.description1}</p>,
-        <p>{props.data.description2}</p>
+      path !='/pages/recommend'?[
+        <p key={11}>{props.data.description1}</p>,
+        <p key={12}>{props.data.description2}</p>
       ]:null
       }
       <section className="mobile_intro_wrapper">
-        <p>{props.data.m_description}</p>
+        <p key={13}>{props.data.m_description}</p>
       </section>
     </div>
   );

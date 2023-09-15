@@ -151,6 +151,7 @@ header .menu_wrapper button .hamburger.active {
 }
 header .logo_wrapper {
     width: 12.3%;
+    text-align: center;
 }
 /* header .logo_wrapper img {
     max-width: 100%;

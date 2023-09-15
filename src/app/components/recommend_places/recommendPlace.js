@@ -1,10 +1,9 @@
 import "./recommendPlace.css";
-export default function RecommendPlaces() {
+export default function RecommendPlaces(props) {
   return (
-    <div className="recommend_sec">
       <div className="recommend_detail_sec">
         <div className="detail_img">
-          <img src="/recommend1.png" alt="Recommendation" />
+          <img src={props.data.img_url} alt="Recommendation" />
         </div>
         <div className="detail_txt">
           <h2>Lorem ipsum dolor</h2>
@@ -14,6 +13,5 @@ export default function RecommendPlaces() {
           </p>
         </div>
       </div>
-    </div>
   );
 }

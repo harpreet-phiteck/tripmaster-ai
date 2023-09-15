@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import Header from "./components/header/header";
 import styles from "./page.module.css";
 import { usePathname } from "next/navigation";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={
-          path != "/pages/search_anywhere"
+          path != "/pages/recommend"
             ? `${styles.body_position} ${styles.body_bg}`
             : `${styles.body_position}`
         }

@@ -91,7 +91,84 @@
         width: 23.2%;
     }
     .country .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec .detail_txt h2 {
-    font-size: 13px;
-    line-height: 23px;
+        font-size: 13px;
+        line-height: 23px;
 }
+}
+@media screen and (max-width: 1280px) {  
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        padding: 10px;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 22.94%;
+    }
+}
+@media screen and (max-width: 1080px) {   
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        padding: 8.8px;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 22.75%;
+    }
+    .main_wrapper .container .recommend_content_wrapper h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 990px) {   
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        padding: 20px;
+        width: 43%;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 48%;
+    }      
+    .main_wrapper .container .recommend_content_wrapper h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }   
+}
+@media screen and (max-width: 880px) {   
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        width: 42%;
+    }   
+    .main_wrapper .container .recommend_content_wrapper h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 47.97%;
+    }
+}
+@media screen and (max-width: 767px) {  
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        width: 41.5%;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 47.7%;
+    }
+}
+@media screen and (max-width: 680px) {   
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        width: 39.3%;
+    }
+    .recommendations .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }   
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper {
+        display: flex;
+        width: 100%;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 47.1%;
+    }  
+}
+@media screen and (max-width: 540px) {  
+    .main_wrapper .container .recommend_content_wrapper .recommend_sec .recommend_detail_sec {
+        width: 91.3%;
+    }
+    .recommendations .main_wrapper .container .recommend_content_wrapper .recommend_sec .detail_wrapper .detail_sec {
+        width: 100%;
+    }  
 }
