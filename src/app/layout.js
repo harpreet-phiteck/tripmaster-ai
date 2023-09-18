@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={
-          path != "/pages/recommend"
+          path != "/pages/recommend" || path != "/pages/country_wise"
             ? `${styles.body_position} ${styles.body_bg}`
             : `${styles.body_position}`
         }

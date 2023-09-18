@@ -6,7 +6,7 @@ import Homepage from "@/app/components/main/homepage";
 import TopPlaces from "@/app/components/top_places/top_places";
 import { usePathname } from "next/navigation";
 import Footer from "@/app/components/footer/Footer";
-import "./recommend.css";
+import "../recommend/recommend.css";
 export default function Search_Anywhere() {
   const path = usePathname();
 
@@ -65,7 +65,7 @@ export default function Search_Anywhere() {
           <h2>Best destinations for your next vacation</h2>
           <div
             className={
-              path == "/pages/recommend"
+              path == "/pages/country_wise"
                 ? "detail_wrapper detail_wrapper_recommend"
                 : "detail_wrapper"
             }

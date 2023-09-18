@@ -1,6 +1,6 @@
  .main_wrapper .container .top_places_wrapper {
     display: flex;
-    width: 94%;
+    width: 100%;
     flex-wrap: wrap;
     background: url('../../../../public/recommend-bg.png');
     background-repeat: no-repeat;
@@ -9,6 +9,7 @@
     border-radius: 30px;
     margin-bottom: 70px;
     padding: 50px;
+    box-sizing: border-box;
 }
  .main_wrapper .container .top_places_wrapper .top_place_detail_sec {
     display: flex;
@@ -27,7 +28,7 @@
     object-fit: contain;
 }
  .main_wrapper .container .top_places_wrapper .top_place_txt {
-    width: 32vw;
+    width: 37vw;
 }
  .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
     color: #1B3231;
@@ -68,6 +69,10 @@
     font-size: 16px;
     line-height: 22px;
 }
+.order{
+    order: 2;
+}
+
 @media screen and (max-width: 1850px) {
      .main_wrapper .container .top_places_wrapper .top_place_detail_sec .top_place_img img {
         width: 100%;
@@ -96,14 +101,12 @@
 }
 @media screen and (max-width: 1280px) {
     .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
-        font-size: 35px;
-        line-height: 50px;
+        font-size: 26px;
+        line-height: 35px;
+        margin-bottom: 5px;
     }
 }
-@media screen and (max-width: 990px) { 
-    .main_wrapper .container .top_places_wrapper {
-        display: none;
-    }
+@media screen and (max-width: 990px) {    
     .tab_places_wrapper {
         display: flex !important;
         max-width: 100%;
@@ -112,28 +115,32 @@
         display: flex !important;
         width: 87%;
     }
-    .tab_places_wrapper .top_places_wrapper .top_place_detail_sec .top_place_txt {
+    .top_places_wrapper .top_place_detail_sec .top_place_txt {
         width: 100% !important;
     }
-    .tab_places_wrapper .top_places_wrapper .top_place_detail_sec .top_place_img {
-        width: 100% !important;
-        height: 100% !important;
+    .main_wrapper .container .top_places_wrapper .top_place_detail_sec .top_place_img {
+        width: 100% !important;  
+        height: auto;     
+    }
+    .top_places_wrapper .top_place_detail_sec .top_place_img img{
+        height: auto;
     }
      .main_wrapper .container .top_places_wrapper .top_place_txt .top_place_btn {
         margin-top: 20px;
         align-items: center;
         justify-content: center;
+        display: block;
+    }
+    .main_wrapper .container .top_places_wrapper .top_place_detail_sec {
+        gap: 60px;
+        flex-wrap: wrap;
     }
      .main_wrapper .container .top_places_wrapper .top_place_detail_sec .new-div {
         padding-left: 0px;
     }
+    
 }
-@media screen and (max-width: 880px) {
-     .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-}
+
 @media screen and (max-width: 767px) {
      .main_wrapper .container .top_places_wrapper .top_place_txt h2 {
         font-size: 25px;

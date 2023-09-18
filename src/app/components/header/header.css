@@ -279,6 +279,10 @@ header .signup_wrapper a {
     .recommendations header .logo_wrapper {
         width: 22.3%;
     }
+    header .signup_wrapper a{
+        font-size: 14px;     
+    }
+    
   
 }
 @media screen and (max-width: 767px) {
