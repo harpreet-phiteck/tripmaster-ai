@@ -1,6 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import Image from "next/image";
+import Link from 'next/link';
 import "./header.css";
 export default function Header() {      
   const path = usePathname()
@@ -14,15 +15,30 @@ export default function Header() {
     <header>
       <div className="menu_wrapper">
         <button>
-          <div className={path !='/pages/recommend' || path !='/pages/country_wise'?"hamburger":'hamburger theme_bg_color'} onClick={mobileMenu}>
-            <span className={path !='/pages/recommend' || path !='/pages/country_wise'? "bar":"bar bg_white" }></span>
-            <span className={path !='/pages/recommend' || path !='/pages/country_wise'? "bar":"bar bg_white" }></span>
-            <span className={path !='/pages/recommend' || path !='/pages/country_wise'? "bar":"bar bg_white" }></span>
+          <div className={path =='/pages/recommend' || path =='/pages/country_wise'?"hamburger theme_bg_color":'hamburger'} onClick={mobileMenu}>
+            <span className={path =='/pages/recommend' || path =='/pages/country_wise'? "bar bg_white":"bar" }></span>
+            <span className={path =='/pages/recommend' || path =='/pages/country_wise'? "bar bg_white":"bar" }></span>
+            <span className={path =='/pages/recommend' || path =='/pages/country_wise'? "bar bg_white":"bar" }></span>
           </div>
           <nav className="navbar">
             <ul className="nav-menu">
+            <li className="nav-item">
+                <Link href="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
+            <li className="nav-item">
+                <Link href="/pages/recommend" className="nav-link">
+                  Recommendation
+                </Link>
+              </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link href="/pages/country_wise" className="nav-link">
+                  CountryWise
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="#" className="nav-link">
                   <span>
                     <Image
                       src="/instagram.png"
@@ -33,10 +49,10 @@ export default function Header() {
                     />
                   </span>
                   Instagram
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link href="#" className="nav-link">
                   <span>
                     {" "}
                     <Image
@@ -48,18 +64,14 @@ export default function Header() {
                     />
                   </span>
                   Twitter
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <Link href="#" className="nav-link">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Terms of Use
-                </a>
-              </li>
+              
             </ul>
           </nav>
         </button>
@@ -74,8 +86,8 @@ export default function Header() {
           
         />
       </div>
-      <div className={path !='/pages/recommend' || path !='/pages/country_wise'? "signup_wrapper":"signup_wrapper bg_color"}>
-        <a href="#">{path !='/pages/recommend' || path !='/pages/country_wise'? 'Sign in':'Plan my trip'}</a>
+      <div className={path =='/pages/recommend' || path =='/pages/country_wise'? "signup_wrapper bg_color":"signup_wrapper"}>
+        <Link href="#">{path =='/pages/recommend' || path =='/pages/country_wise'? 'Plan my trip':'Sign in'}</Link>
       </div>
     </header>
   );

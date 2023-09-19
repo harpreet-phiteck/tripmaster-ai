@@ -13,29 +13,29 @@ export default function Search_Anywhere() {
   const places = [
     {
       key: 11,
-      bg_img: "/first.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/Rome.png",
+      detail_heading: "Rome",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
     {
       key: 12,
-      bg_img: "/second.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/Milan.png",
+      detail_heading: "Milan",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
     {
       key: 13,
-      bg_img: "/third.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/Venice.png",
+      detail_heading: "Venice",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
     {
       key: 14,
-      bg_img: "/second.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/Bologna.png",
+      detail_heading: "Bologna",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
@@ -45,24 +45,24 @@ export default function Search_Anywhere() {
       <div className="container">
         <Heading_ele
           data={{
-            heading: "Where Are You Planning To Go?",
+            heading: "Your best trip to Italy",
             description1: "",
             description2: "",
             m_description:
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,sed diam voluptua.",
           }}
         />
-        <Heading_input />
+        <Heading_input data={'Italy'} />
         <section className="recommend_content_wrapper">
-          <h2>Our recommendations</h2>
+          <h2>Top 3-days tours</h2>
           <div className="recommend_sec">
-            <RecommendPlaces data={{ img_url: "/recommend1.png" }} />
-            <RecommendPlaces data={{ img_url: "/recommend2.png" }} />
-            <RecommendPlaces data={{ img_url: "/recommend3.png" }} />
-            <RecommendPlaces data={{ img_url: "/recommend4.png" }} />
+            <RecommendPlaces data={{ img_url: "/Tuscan.png", heading:'Tuscan Wine Tour by italy and Wine'}} />
+            <RecommendPlaces data={{ img_url: "/walks.png", heading:'Walks of Italy' }} />
+            <RecommendPlaces data={{ img_url: "/joe-banana.png", heading:'Joe Banana Limos' }} />
+            <RecommendPlaces data={{ img_url: "/3daysMilan.png", heading:'3 Days in Milan' }} />
           </div>
-          <TopPlaces />
-          <h2>Best destinations for your next vacation</h2>
+          <TopPlaces data={{heading:'A wheelchair-accessible guide to Rome and Naples', img_url1:'/wheelchair.png'}} />
+          <h2>Best destinations from Tripmaster AI</h2>
           <div
             className={
               path == "/pages/country_wise"
@@ -74,17 +74,7 @@ export default function Search_Anywhere() {
               return <Homepage key={index} places={places[index]} />;
             })}
           </div>
-        </section>
-        <TopPlaces order={"order"} data={{heading:'Incredible 5 day trip to Tokyo, Japan', img_url1:'/tokyo.png'}} />  
-        <section className="recommend_content_wrapper">
-          <h2>More to explores</h2>
-          <div className="recommend_sec">
-            <RecommendPlaces data={{ img_url: "/eiffle.png" }} />
-            <RecommendPlaces data={{ img_url: "/mehal.png" }} />
-            <RecommendPlaces data={{ img_url: "/banglow.png" }} />
-            <RecommendPlaces data={{ img_url: "/sea-view.png" }} />
-          </div>
-        </section>    
+        </section>          
       </div>
       <Footer/>
     </main>

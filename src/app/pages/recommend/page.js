@@ -13,29 +13,29 @@ export default function Search_Anywhere() {
   const places = [
     {
       key: 11,
-      bg_img: "/first.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/italy.png",
+      detail_heading: "Italy",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
     {
       key: 12,
-      bg_img: "/second.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/brazil.png",
+      detail_heading: "Brazil",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
     {
       key: 13,
-      bg_img: "/third.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/usa.png",
+      detail_heading: "The USA",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },
     {
       key: 14,
-      bg_img: "/second.png",
-      detail_heading: "Lorem ipsum dolor",
+      bg_img: "/india.png",
+      detail_heading: "India",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod consetetur",
     },

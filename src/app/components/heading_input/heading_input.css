@@ -32,7 +32,7 @@
     stroke: #1B3231;
 }
 .main_wrapper .container .planning_wrapper .choose_date {
-    width: 148px;
+    width: 177px;
     height: 44px;
     border-left: 1px solid #dddddd;
     display: flex;
@@ -69,8 +69,8 @@
     background: #00AEA4;
     border: 1px solid #00AEA4;
     border-radius: 50px;
-    width: 150px;
-    height: 63px;
+    width: 146px;
+    height: 65px;
     color: #fff;
     font-size: 18px;
     line-height: 25px;

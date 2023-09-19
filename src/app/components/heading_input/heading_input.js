@@ -3,7 +3,7 @@ import './heading_input.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 import { usePathname } from 'next/navigation'
-export default function Heading_input(){
+export default function Heading_input(props){
   const path = usePathname()
     return(
         <div className="planning_wrapper">
@@ -26,14 +26,14 @@ export default function Heading_input(){
             <input
               className="nosubmit"
               type="search"
-              placeholder="Where are you looking for?"
+              placeholder={props.data ? props.data : "Where are you looking for?"}
             />
           </form>
         </div>
         <div className="choose_date">
           <button>
             <FontAwesomeIcon icon={faCalendarDays}/>
-            Start date
+            Choose date
           </button>
         </div>
         <div className="lets_go">
