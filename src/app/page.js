@@ -1,7 +1,10 @@
+'use client'
 import Homepage from "./components/main/homepage";
 import Heading_ele from "./components/heading_ele/heading_ele";
 import Heading_input from "./components/heading_input/heading_input";
+import { usePathname } from "next/navigation";
 export default function Home() {
+ const path = usePathname()
   const places = [
     {
       bg_img: "/first.png",
@@ -25,7 +28,7 @@ export default function Home() {
   return (
     <>
       <main className="main_wrapper">
-        <div className="container">
+        <div className="container" style={path=='/'? {width:'1360px', margin:'auto'}:null}>
           <Heading_ele
             data={{
               heading: "Plan Your Trip With Tripmaster AI",
@@ -40,11 +43,7 @@ export default function Home() {
           <Heading_input />
           <div className="detail_wrapper">
             {places.map((place, index) => {
-              return (
-                <>
-                  <Homepage places={places[index]} />
-                </>
-              );
+              return <Homepage key={index} places={places[index]}/>
             })}
           </div>
         </div>

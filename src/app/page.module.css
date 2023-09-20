@@ -12,3 +12,11 @@
   background-position: center center;
   background-attachment: fixed;
 }
+.main_wrapper {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.main_container {
+  width: 1360px;
+  margin: 0 auto;
+}

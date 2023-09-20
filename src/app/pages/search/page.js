@@ -1,5 +1,23 @@
+'use client'
+import { useEffect,useState } from 'react';
 import './result.css';
 export default function Search(){
+    const [searchData, setSearchData] = useState('data');
+    const onSubmit = async (event)=>{        
+        event.preventDefault()
+        setSearchData('')         
+        const formData = event.target[0].value              
+        const response = await fetch('https://api.tripmaster.ai/api/search/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: `{"searchTerm":"${formData}"}`
+        })    
+        const data = await response.json()
+        setSearchData(data)
+        console.log(data)        
+    }
     const placeDetail = [
         {
             sequence_heading: 'Morning',
@@ -37,18 +55,25 @@ export default function Search(){
                 <div className="result_header">
                     <h1>Italy</h1>
                     <div className="search_div">
+                    <form onSubmit={onSubmit} style={{width:'100%', display:'flex'}}>
                         <div className="search_heading">
                             <span><img src="/search.png" alt="Search..."/> <input type='text' name='search' placeholder='Any special details?' style={{fontFamily:'Chillax-Regular'}}/></span>
                         </div>
                         <div className="search_submit">
+                           <button type='submit' style={{backgroundColor:'transparent', border:'none'}}>
                             <img src="/MagicWand.png" alt="Magic Wand"/>
+                           </button>
+                        
                         </div>
+                    </form>    
                     </div>
                     <div className="save_share_cont">
                         <img src="/Save and share (1).png" alt=""/>
                         <img src="/Save and share (2).png" alt=""/>
                     </div>
                 </div>
+                {
+                    searchData ? ( 
                 <div className="result_detail_wrapper">
                     <div className="result_detail_sec">
                         <div className="result_header_sec">
@@ -59,9 +84,9 @@ export default function Search(){
                             </div>
                         </div>
                         {
-                            placeDetail.map((place)=>{
+                            placeDetail.map((place,index)=>{
                                 return(
-                                    <div className="morning_container">
+                                    <div className="morning_container" key={index} >
                             <div className="morning_heading">
                                 <h2>{place.sequence_heading}</h2>
                             </div>
@@ -91,6 +116,13 @@ export default function Search(){
                         }                       
                     </div>
                 </div>
+                ):(
+                <div className="result_detail_wrapper">
+                    <div className="result_detail_sec">
+                        <img src='/loader.gif' alt='' width={64} height={64} style={{margin:'auto'}} />
+                    </div>
+                </div>
+                )}
             </section>
         </div>
     </main>
