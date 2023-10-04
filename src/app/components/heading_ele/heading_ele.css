@@ -29,9 +29,9 @@
     .main_wrapper .container .intro_wrapper {
         width: 75vw;
     }
-    .main_wrapper .container .detail_wrapper .detail_sec {
+    /* .main_wrapper .container .detail_wrapper .detail_sec {
         width: 31.8%;
-    }
+    } */
 }
 @media screen and (max-width: 1280px) {
     .main_wrapper .container .intro_wrapper {

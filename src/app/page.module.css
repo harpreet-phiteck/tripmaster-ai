@@ -17,6 +17,7 @@
   margin-bottom: 30px;
 }
 .main_container {
-  width: 1360px;
+  width: 95% !important;
+  max-width: 1360px !important;
   margin: 0 auto;
 }

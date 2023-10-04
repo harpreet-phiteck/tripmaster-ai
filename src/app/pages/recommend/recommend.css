@@ -1,5 +1,6 @@
 .main_wrapper .container {
     width: 90%;
+    max-width: 90%;
     margin: auto;
 }
 .main_wrapper .container .recommend_content_wrapper > h2 {

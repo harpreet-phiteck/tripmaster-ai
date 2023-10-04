@@ -2,6 +2,7 @@
 import Homepage from "./components/main/homepage";
 import Heading_ele from "./components/heading_ele/heading_ele";
 import Heading_input from "./components/heading_input/heading_input";
+import styles from './page.module.css'
 import { usePathname } from "next/navigation";
 export default function Home() {
  const path = usePathname()
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <>
       <main className="main_wrapper">
-        <div className="container" style={path=='/' ? {width:'1360px', margin:'auto'}:null}>
+        <div className={`container ${styles.main_container}`}>
           <Heading_ele
             data={{
               heading: "Plan Your Trip With Tripmaster AI",
