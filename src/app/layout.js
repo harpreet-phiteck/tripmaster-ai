@@ -12,8 +12,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const path = '';
-  // const path = usePathname();
+  const path ='';
   return (
     <html lang="en">
       <body
