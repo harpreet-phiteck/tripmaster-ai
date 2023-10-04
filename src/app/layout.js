@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "./components/header/header";
@@ -12,7 +12,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
+  const path = '';
+  // const path = usePathname();
   return (
     <html lang="en">
       <body
