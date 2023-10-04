@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <main className="main_wrapper">
-        <div className="container" style={path=='/'? {width:'1360px', margin:'auto'}:null}>
+        <div className="container" style={path=='/' && innerWidth > 991? {width:'1360px', margin:'auto'}:null}>
           <Heading_ele
             data={{
               heading: "Plan Your Trip With Tripmaster AI",
