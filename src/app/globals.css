@@ -46,7 +46,8 @@ body{
   margin-bottom: 30px;
 }
 .main_wrapper.container {
-  width: 1360px;
+  width: 95%;
+  max-width: 1360px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1400px) {
